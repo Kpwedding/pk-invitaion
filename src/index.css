@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fonts */
+
+@font-face {
+  font-family: catavaloLight;
+  src: url(/src/assets/fonts/CabritoSerif-ConExB.otf);
+}
+.Cabrito-light {
+  font-family: catavaloLight;
+}
+
+@font-face {
+  font-family: catavaloRegular;
+  src: url(/src/assets/fonts/CabritoSerif-ConBoo.otf);
+}
+.Cabrito-regular {
+  font-family: catavaloRegular;
+}
+
+@font-face {
+  font-family: brittanySignature;
+  src: url(/src/assets/fonts/BrittanySignature.ttf);
+}
+.brittanySignature {
+  font-family: brittanySignature;
+}
+
+@font-face {
+  font-family: catavalo;
+  src: url(/src/assets/fonts/catavalo-4.otf);
+}
+
+.catavalo {
+  font-family: catavalo;
+}
+
+/* Custom Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.overfow-hidden {
+  overflow: hidden !important;
+}
+
+.overfow-x-hidden {
+  overflow-x: hidden !important;
+}
+
+.grid-parent {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.grid-child {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.gold-line {
+  background-image: -moz-linear-gradient(
+    0deg,
+    rgb(208, 158, 87) 0%,
+    rgb(236, 207, 104) 52%,
+    rgb(163, 103, 33) 100%
+  );
+  background-image: -webkit-linear-gradient(
+    0deg,
+    rgb(208, 158, 87) 0%,
+    rgb(236, 207, 104) 52%,
+    rgb(163, 103, 33) 100%
+  );
+  background-image: -ms-linear-gradient(
+    0deg,
+    rgb(208, 158, 87) 0%,
+    rgb(236, 207, 104) 52%,
+    rgb(163, 103, 33) 100%
+  );
+  background-image: linear-gradient(
+    0deg,
+    rgb(208, 158, 87) 0%,
+    rgb(236, 207, 104) 52%,
+    rgb(163, 103, 33) 100%
+  );
+}
+
+.font-gradiant-sangeeth {
+  background: linear-gradient(
+    90deg,
+    #efcb78 2.93%,
+    #f1ba4e 29.94%,
+    #edd788 52.6%,
+    #d49b1c 69.48%,
+    #f0d162 95.52%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
